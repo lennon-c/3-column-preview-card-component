@@ -1,0 +1,117 @@
+:root {
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+  --clr-trans-white: hsla(0, 0%, 100%, 0.75);
+  --clr-back-head-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--clr-back-head-buttons);
+  display: flex;
+  place-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 0.3em;
+  overflow: hidden;
+}
+
+.subcontainer {
+  min-height: 250px;
+  padding: 1em 2em 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+
+#c1 {
+  background-color: var(--clr-bright-orange);
+}
+#c2 {
+  background-color: var(--clr-dark-cyan);
+}
+#c3 {
+  background-color: var(--clr-very-dark-cyan);
+}
+
+.subcontainer h1 {
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  color: var(--clr-back-head-buttons);
+  font-size: 2em;
+}
+
+.subcontainer p {
+  font-family: "Lexend Deca";
+  color: var(--clr-trans-white);
+  font-size: 0.7em;
+  word-spacing: 1.15em;
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+
+.subcontainer a {
+  text-align: center;
+  width: 6.5em;
+  text-decoration: none;
+  padding: 0.7em 0.9em 0.7em 0.9em;
+  border: 2px solid var(--clr-back-head-buttons);
+  font-size: 0.7em;
+  background-color: var(--clr-back-head-buttons);
+  border-radius: 2em;
+  font-family: 'Lexend Deca';
+  margin-bottom: 1em;
+}
+
+#a1{
+  color: var(--clr-bright-orange);
+}
+#a2{
+  color: var(--clr-dark-cyan);
+}
+#a3{
+  color: var(--clr-very-dark-cyan);
+}
+
+
+#a1:active{
+  color: white;
+  background-color: var(--clr-bright-orange);
+}
+#a2:active{
+  color: white;
+  background-color: var(--clr-dark-cyan);
+}
+#a3:active{
+  color: white;
+  background-color: var(--clr-very-dark-cyan);
+}
+
+
+@media only screen and (min-width: 768px){
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    width: 60%;
+    flex-direction: row;
+    height: 65vh;
+  }
+}
+
+
